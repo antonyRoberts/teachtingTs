@@ -179,7 +179,7 @@ class Greeter {
         let lastName: string;
         let father: Person;
         let mother: Person;
-        let age: Number;
+        let age: number;
 
         console.log('person1.gender', person1.gender)
         if (person1.gender === 1) {
@@ -330,4 +330,3 @@ let salutations = "Some people are more verbose in their introductions"
 var greeter = new Greeter("Hello, world 1.0 !", salutations);
 
 document.body.innerHTML = greeter.greet();
-
