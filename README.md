@@ -1,0 +1,2 @@
+# teachtingTs
+Helping teach typeScript
