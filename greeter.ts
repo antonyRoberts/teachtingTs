@@ -174,9 +174,9 @@ class Greeter {
     }
 
     makeABaby(person1: Person, person2: Person) {
-        let firstName: String;
+        let firstName: string;
         let gender: Gender;
-        let lastName: String;
+        let lastName: string;
         let father: Person;
         let mother: Person;
         let age: Number;
