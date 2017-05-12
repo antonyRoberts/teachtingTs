@@ -1,0 +1,11 @@
+<div>
+
+<div>
+    <button (click)="makeABabyButton()"> Make A Baby </button>
+</div>
+    
+    <div *ngFor="let baby of babies;" >
+          {{ baby.firstName }} {{ baby.lastName }} is a {{ baby.gender | genderEnum }} age {{ baby.age}}
+    </div>
+
+</div>

@@ -1,0 +1,45 @@
+<div>
+    <div>
+        <h4>Get Married Home</h4>
+    </div>
+
+    <div>
+        <button (click)="getPerson(1)"> Get A Person </button> Person 1: {{person1?.firstName}} {{ person1?.lastName}} {{person1?.age}}
+        {{person1?.gender | genderEnum }} {{person1?.married}} <br/>
+        <button (click)="getPerson(2)"> Get A Person </button> Person 2: {{ person2?.firstName }} {{ person2?.lastName}}
+        {{person2?.age}} {{person2?.gender | genderEnum }} {{person2?.married}} <br/>
+        <br/>
+        <button (click)="getMarried()"> Get Married </button>
+    </div>
+
+    <div class="holder">
+        <div class="marriages-holder">
+            <h4> Marriages </h4>
+            <div *ngFor="let marriage of marriages; index as i;" (click)="getFamily(i)">
+                {{i}}) {{ marriage.father?.firstName }} and {{ marriage.mother?.firstName }} {{ marriage.father?.lastName }} have {{ marriage.children?.length
+                }} kids
+                <div *ngFor="let child of marriage.children">
+
+                    <div style="padding-left:18px">
+                        {{ child.firstName }} {{ child.age }} {{child.gender | genderEnum}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="selected-family-holder">
+            <h4> Selected Family </h4>
+            <div *ngIf="selectedFamily">
+
+                {{ selectedFamily.father?.lastName }} Family <br/> Father: {{ selectedFamily.father?.firstName }} <br/> Mother:
+                {{ selectedFamily.mother?.firstName }} <br/>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div>
+    </div>
+
+</div>

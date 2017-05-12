@@ -1,0 +1,21 @@
+.holder{
+    display: inline-block; 
+    min-width: 600px;
+}
+
+.selected-family-holder{
+    float: right;
+    text-align: left;
+    min-width: 300px;
+    min-height: 200px;
+    border-color: darkturquoise;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.marriages-holder{
+   min-width: 300px;
+   float: left;
+
+}
